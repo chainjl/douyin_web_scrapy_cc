@@ -21,7 +21,7 @@ class ProfileSpiderSpider(scrapy.Spider):
     '''
 
     def start_requests(self):
-        url = 'https://www.douyin.com/user/MS4wLjABAAAA00nKo5lh2WLrvyxx1niCYdDN7U78e8WlaYQFhoLcXvQ'
+        url = 'https://www.douyin.com/user/MS4x1niCYdDN7U78e8WlaYQFhoLcXvQ'
 
         yield SplashRequest(url, self.parse, endpoint='execute', args={'lua_source': self.script})
 
